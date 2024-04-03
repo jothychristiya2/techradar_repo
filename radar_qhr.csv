@@ -21,7 +21,7 @@ Application Insights,Adopt,Platforms,FALSE,"Application Insights is an extension
 Along with collecting metrics and application telemetry data, which describe application activities and health, Application Insights can collect and store application trace logging data.
 "
 Certificates in key vaults,Assess,Techniques,FALSE,Applications that use certificates for signing or mutual TLS authentication should store their certificates in a vault (Azure Key Vault)
-Open Telemetry,Adopt,Techniques,FALSE,"OpenTelemetry is a collection of tools, APIs, and SDKs. We can use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help analyze our software’s performance and behavior.<br/><br/>We should use tools implementing the OTEL standard/spec to gather health/performance data in our applications."
+Open Telemetry,Adopt,Techniques,FALSE,"OpenTelemetry is a collection of tools, APIs, and SDKs. We can use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help analyze our softwareï¿½s performance and behavior.<br/><br/>We should use tools implementing the OTEL standard/spec to gather health/performance data in our applications."
 Binary data migrated blob storage,Adopt,Techniques,FALSE,"Applications that store documents should adopt cloud storage technologies rather than storing those documents on a server's local disk, or in a relational database."
 Secrets in key vaults,Adopt,Techniques,FALSE,"Applications that hold secret information (API keys, passwords, licences) should migrate from database tables, application properties files, and 1Password into a key vaults (Azure Key Vault)."
 Externalizing app config,Hold,Techniques,FALSE,Applications that rely on configuration (either application or tenant config) should move that config to a config service (either Azure App Config or a custom multi-tenant config service). This will help eliminate waste and deliver changes faster to consumers by avoiding downtime or waiting for new builds.
@@ -41,12 +41,3 @@ Kubernetes,Adopt,Tools,FALSE,The orchestration of multiple running instances sho
 Docker,Adopt,Tools,FALSE,Docker should be used to containerize applications that needs to be run locally during development or testing
 ChatGPT,Hold,Tools,TRUE,ChatGPT is an artificial intelligence chatbot that can provide answers to questions or prompts to generate text output.
 GitHub Copilot,Assess,Tools,TRUE,A plugin for various IDEs that allow developers to use AI assistance in developing source code.
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
