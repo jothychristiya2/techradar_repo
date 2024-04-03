@@ -1,0 +1,52 @@
+name,ring,quadrant,isNew,description
+PlantUML,Trial,languages-and-frameworks,FALSE,PlantUML is an open-source tool allowing users to create diagrams from a plain text language.<br/><br/>It is a domain specific language that can be used to create diagrams as code.
+Swift,Assess,languages-and-frameworks,FALSE,"Swift is Apple's modern general programming language for mobile, server, and desktop applications. Introduced in 2014, Swift replaces Objective-C as the dominant language in the Apple ecosystem."
+Terraform,Adopt,languages-and-frameworks,FALSE,Terraform is an open-source infrastructure-as-code software tool created by HashiCorp. Developers define cloud infrastructure using a declarative configuration language known as HashiCorp Configuration Language (HCL).
+PowerShell,Adopt,languages-and-frameworks,FALSE,"PowerShell is a task automation and configuration management program from Microsoft, consisting of a command-line shell and the associated scripting language. <br/><br/>QHR should adopt this language over alternatives like Bash and other shell scripting languages."
+Nest JS,Adopt,languages-and-frameworks,FALSE,"Nest.js is a progressive Node.js framework for building efficient, reliable and scalable server-side applications. Nest.js should be preferred over Node.js because it provides framework capabilities that do not exist in Node.js."
+Svelte,Assess,languages-and-frameworks,FALSE,"Svelte is a free and open-source front end component framework. 
+Svelte compiles HTML templates to specialized code that manipulates the DOM directly, 
+which may reduce the size of transferred files and give better client performance."
+Azure SQL Managed Instance,Trial,Platforms,FALSE,"Azure SQL Managed Instance is the scalable cloud database service that combines the broadest SQL Server database engine compatibility with all the benefits of a fully managed and evergreen platform as a service. <br/><br/>
+
+SQL Managed Instance allows existing SQL Server databases to migrate to cloud infrastrucure using a lift and shift method from on-premises. <br/><br/>
+
+Azure SQL Managed Instance preserves all PaaS capabilities (automatic patching and version updates, automated backups, high availability) that drastically reduce management overhead and TCO.
+"
+Cosmos DB,Trial,Platforms,FALSE,"Azure Cosmos DB is a fully managed NoSQL and relational database for modern app development. <br/></br>
+It offers excellent response times, and automatic and instant scalability. There are client SDKs and APIs available for the data and management planes."
+GitHub Actions,Adopt,Platforms,FALSE,"GitHub Actions allows developers to automate, customize, and execute their software development workflows right in the repositor. <br/><br/>Developers can create actions to perform any jobs, including CI/CD, and combine actions in a completely customized workflow, depending on their needs."
+Application Insights,Adopt,Platforms,FALSE,"Application Insights is an extension of Azure Monitor and provides application performance monitoring (APM) features. It can monitor, display, and alert how application is performing, and allow admins to reactively review application execution data to determine the cause of an incident.
+<br/><br/>
+Along with collecting metrics and application telemetry data, which describe application activities and health, Application Insights can collect and store application trace logging data.
+"
+Certificates in key vaults,Assess,Techniques,FALSE,Applications that use certificates for signing or mutual TLS authentication should store their certificates in a vault (Azure Key Vault)
+Open Telemetry,Adopt,Techniques,FALSE,"OpenTelemetry is a collection of tools, APIs, and SDKs. We can use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help analyze our software’s performance and behavior.<br/><br/>We should use tools implementing the OTEL standard/spec to gather health/performance data in our applications."
+Binary data migrated blob storage,Adopt,Techniques,FALSE,"Applications that store documents should adopt cloud storage technologies rather than storing those documents on a server's local disk, or in a relational database."
+Secrets in key vaults,Adopt,Techniques,FALSE,"Applications that hold secret information (API keys, passwords, licences) should migrate from database tables, application properties files, and 1Password into a key vaults (Azure Key Vault)."
+Externalizing app config,Hold,Techniques,FALSE,Applications that rely on configuration (either application or tenant config) should move that config to a config service (either Azure App Config or a custom multi-tenant config service). This will help eliminate waste and deliver changes faster to consumers by avoiding downtime or waiting for new builds.
+Containerizing developer environments,Assess,Techniques,FALSE,"Developer workstations at QHR are very specialized, and they are difficult and time-consuming to set up. Containerizing will provide consistency and uniformity in developer tools, which benefits teams in having the same toolset. Enhancements can be made to containers which then allows all developers to realize those benefits together."
+External traffic filtering through APIM,Trial,Techniques,FALSE,Traffic from non-QHR applications that access QHR applications must be directed through to the Azure API Management endpoints. Developers must register their applications and routes with APIM. This gives QHR the flexibility to change backend implementations as needed. This decouples our consumers from our deployments.
+Replace legacy AuthN systems with OIDC,Adopt,Techniques,FALSE,All access to PII and PHI data should be protected using OIDC.
+CI/CD infrastructure as a service,Adopt,Techniques,FALSE,Software such as GitHub Action should be used to build and deploy applications
+Tagging in Confluence,Adopt,Techniques,TRUE,"As a way to facilitate access to all the information available in Confluence, tagging each page should be used to categorize related topic together"
+Contract first API development,Adopt,Techniques,FALSE,"Before coding start on any REST API, the solution should identify the capabilities of the software, the fields accepted and exposed, and the security model"
+Diagrams as Code,Adopt,Techniques,FALSE,"Artifacts neccessary to document an application shoud include C4 digrams, sequece diagrams, etc. To easily maintain the accuracy of those diagrams, developers should be able to easily update any diagrams using code."
+Microservice dependency map,Assess,Techniques,TRUE,"As more and more microservices are being developped, a map of dependencies is neccessary to test and confidently deploy services "
+Automated accessibility tests,Assess,Techniques,TRUE,"In addition to unit testing and integration testing, tests should be added to return an accessibility ratio for web developments"
+GitHub as team knowledge base,Assess,Techniques,TRUE,"Documentation need to understand an application should reside with the code, for example C4 diagrams, contracts, decision log."
+Reachability analysis when testing infrastructure,Assess,Techniques,TRUE,"When an application is deployed, an automated test should be run to test all connectivity with other system."
+Container Registry,Adopt,Tools,FALSE,"External software should be vetted and stored in the container registry for all to use. Once stable, image of custom development should also be added to the QHR ACR."
+Kubernetes,Adopt,Tools,FALSE,The orchestration of multiple running instances should be deploy onto Kubernetes
+Docker,Adopt,Tools,FALSE,Docker should be used to containerize applications that needs to be run locally during development or testing
+ChatGPT,Hold,Tools,TRUE,ChatGPT is an artificial intelligence chatbot that can provide answers to questions or prompts to generate text output.
+GitHub Copilot,Assess,Tools,TRUE,A plugin for various IDEs that allow developers to use AI assistance in developing source code.
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
